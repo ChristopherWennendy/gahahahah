@@ -18,7 +18,7 @@ def search(pokemonid):
     name = source[1]
     hp = source[2]
     atk = source[3]
-    def = source[4]
+    defs = source[4]
     satk = source[5]
     sdef = source[6]
     spd = source[7]
