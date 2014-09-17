@@ -16,7 +16,14 @@ def search(pokemonid):
     source = data[pokemonid].split(",")
     pid = source[0]
     name = source[1]
-    return render_template("id.html", pid=pid, name=name)
+    hp = source[2]
+    atk = source[3]
+    def = source[4]
+    satk = source[5]
+    sdef = source[6]
+    spd = source[7]
+    ttl = source[8]
+    return render_template("id.html", pid=pid, name=name, atk=atk, def=def , satk=satk , sdef=sdef , spd=spd , ttl=ttl)
 
 if __name__ == "__main__":
     app.run(debug=True)
